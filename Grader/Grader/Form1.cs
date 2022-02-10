@@ -31,28 +31,34 @@ namespace Grader
                 if (testScore < 60)
                 {
                     gradeLabel.Text = "F";
+                    MessageBox.Show("You are failing.");
                 }
                 else
                 {
                     if (testScore < 70)
                     {
                         gradeLabel.Text = "D";
+                        MessageBox.Show("You must bring up " +
+                            "your grade to at least a C to pass");
                     }
                     else
                     {
                         if (testScore < 80)
                         {
                             gradeLabel.Text = "C";
+                            MessageBox.Show("You're barely passing.");
                         }
                         else
                         {
                             if (testScore < 90)
                             {
                                 gradeLabel.Text = "B";
+                                MessageBox.Show("You're doing pretty good");
                             }
                             else
                             {
                                 gradeLabel.Text = "A";
+                                MessageBox.Show("Excellent work!");
                             }
                         }
                     }
