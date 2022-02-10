@@ -65,6 +65,12 @@ namespace Grader
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            gradeLabel.Text = "";
+            testScoreTextBox.Text = "";
+        }
+
         private void exitButton_Click(object sender, EventArgs e)
         {
             // Close the form.

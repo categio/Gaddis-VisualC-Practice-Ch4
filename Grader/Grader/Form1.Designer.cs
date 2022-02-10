@@ -34,6 +34,7 @@
             this.gradeLabel = new System.Windows.Forms.Label();
             this.determineGradeButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // testScorePromptLabel
@@ -72,29 +73,40 @@
             // 
             // determineGradeButton
             // 
-            this.determineGradeButton.Location = new System.Drawing.Point(45, 82);
+            this.determineGradeButton.Location = new System.Drawing.Point(12, 82);
             this.determineGradeButton.Name = "determineGradeButton";
             this.determineGradeButton.Size = new System.Drawing.Size(75, 36);
             this.determineGradeButton.TabIndex = 4;
-            this.determineGradeButton.Text = "Determine Grade";
+            this.determineGradeButton.Text = "&Determine Grade";
             this.determineGradeButton.UseVisualStyleBackColor = true;
             this.determineGradeButton.Click += new System.EventHandler(this.determineGradeButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(126, 82);
+            this.exitButton.Location = new System.Drawing.Point(181, 82);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 36);
             this.exitButton.TabIndex = 5;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(98, 82);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 36);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "&Clear";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(247, 133);
+            this.ClientSize = new System.Drawing.Size(268, 133);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.determineGradeButton);
             this.Controls.Add(this.gradeLabel);
@@ -116,6 +128,7 @@
         private System.Windows.Forms.Label gradeLabel;
         private System.Windows.Forms.Button determineGradeButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button button1;
     }
 }
 
