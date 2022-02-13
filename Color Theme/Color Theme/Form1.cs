@@ -41,6 +41,22 @@ namespace Color_Theme
             }
         }
 
+        private void offWhiteRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (offWhiteRadioButton.Checked)
+            {
+                this.BackColor = Color.FloralWhite;
+            }
+        }
+
+        private void greyRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (greyRadioButton.Checked)
+            {
+                this.BackColor = Color.LightGray;
+            }
+        }
+
         private void normalRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (normalRadioButton.Checked)
@@ -53,6 +69,6 @@ namespace Color_Theme
         {
             //close form/proggie
             this.Close();
-        }
+        }        
     }
 }
