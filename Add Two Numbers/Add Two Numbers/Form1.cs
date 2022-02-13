@@ -33,13 +33,13 @@ namespace Add_Two_Numbers
                 else
                 {
                     // Display an error message about the second TextBox.
-                    MessageBox.Show("The second TextBox contains invalid data.");
+                    MessageBox.Show("The second TextBox contains invalid data type.");
                 }
             }
             else
             {
                 // Display an error message about the first TextBox.
-                MessageBox.Show("The first TextBox contains invalid data.");
+                MessageBox.Show("The first TextBox contains invalid data type.");
             }
         }
     }
