@@ -93,6 +93,7 @@ namespace Color_Theme
             // normalRadioButton
             // 
             this.normalRadioButton.AutoSize = true;
+            this.normalRadioButton.Checked = true;
             this.normalRadioButton.Location = new System.Drawing.Point(75, 118);
             this.normalRadioButton.Name = "normalRadioButton";
             this.normalRadioButton.Size = new System.Drawing.Size(118, 20);
