@@ -33,14 +33,14 @@ namespace Fuel_Economy
                 {
                     //display an error message for gallonsTextBox
                     MessageBox.Show("Invalid gallons input. " +
-                        "gallons can only accept numerical input.");
+                        "Gallons can only accept numerical input.");
                 }
             }
             else
             {
                 //display an error message for milesTextBox
                 MessageBox.Show("Invalid miles input. " +
-                    "miles can only accept numerical input.");
+                    "Miles can only accept numerical input.");
             }
         }
 
