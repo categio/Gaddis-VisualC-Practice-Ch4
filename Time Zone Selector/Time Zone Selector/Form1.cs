@@ -24,29 +24,29 @@ namespace Time_Zone_Selector
             if (cityListBox.SelectedIndex != -1)
             {
                 //get selected value
-                city = cityListBox.SelectedIndex.ToString();
+                city = cityListBox.SelectedItem.ToString();
 
                 //determine time zone for city selected by user
                 switch (city)
                 {
                     case "Honolulu":
-                        timeZoneOutputLabel.Text = "Hawaii-Aleutian";
+                        timeZoneOutputLabel.Text = "Hawaii-Aleutian Standard Time";
                         break;
 
                     case "San Francisco":
-                        timeZoneOutputLabel.Text = "Pacific";
+                        timeZoneOutputLabel.Text = "Pacific Standard Time";
                         break;
 
                     case "Denver":
-                        timeZoneOutputLabel.Text = "Mountain";
+                        timeZoneOutputLabel.Text = "Mountain Standard Time";
                         break;
 
                     case "Minneapolis":
-                        timeZoneOutputLabel.Text = "Central";
+                        timeZoneOutputLabel.Text = "Central Standard Time";
                         break;
 
                     case "New York":
-                        timeZoneOutputLabel.Text = "Eastern";
+                        timeZoneOutputLabel.Text = "Eastern Standard Time";
                         break;
                 }
             }

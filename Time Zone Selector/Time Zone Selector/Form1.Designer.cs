@@ -59,6 +59,7 @@ namespace Time_Zone_Selector
             // timeZoneOutputLabel
             // 
             this.timeZoneOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.timeZoneOutputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeZoneOutputLabel.Location = new System.Drawing.Point(129, 175);
             this.timeZoneOutputLabel.Name = "timeZoneOutputLabel";
             this.timeZoneOutputLabel.Size = new System.Drawing.Size(207, 20);
@@ -127,7 +128,7 @@ namespace Time_Zone_Selector
             this.Controls.Add(this.timeZoneDescriptionLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Time Zone";
             this.ResumeLayout(false);
