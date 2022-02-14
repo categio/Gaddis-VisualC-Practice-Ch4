@@ -41,7 +41,7 @@ namespace Time_Zone_Selector
             // promptLabel
             // 
             this.promptLabel.AutoSize = true;
-            this.promptLabel.Location = new System.Drawing.Point(37, 24);
+            this.promptLabel.Location = new System.Drawing.Point(30, 24);
             this.promptLabel.Name = "promptLabel";
             this.promptLabel.Size = new System.Drawing.Size(331, 16);
             this.promptLabel.TabIndex = 0;
@@ -50,7 +50,7 @@ namespace Time_Zone_Selector
             // timeZoneDescriptionLabel
             // 
             this.timeZoneDescriptionLabel.AutoSize = true;
-            this.timeZoneDescriptionLabel.Location = new System.Drawing.Point(79, 176);
+            this.timeZoneDescriptionLabel.Location = new System.Drawing.Point(47, 175);
             this.timeZoneDescriptionLabel.Name = "timeZoneDescriptionLabel";
             this.timeZoneDescriptionLabel.Size = new System.Drawing.Size(76, 16);
             this.timeZoneDescriptionLabel.TabIndex = 1;
@@ -59,37 +59,41 @@ namespace Time_Zone_Selector
             // timeZoneOutputLabel
             // 
             this.timeZoneOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.timeZoneOutputLabel.Location = new System.Drawing.Point(173, 176);
+            this.timeZoneOutputLabel.Location = new System.Drawing.Point(129, 175);
             this.timeZoneOutputLabel.Name = "timeZoneOutputLabel";
-            this.timeZoneOutputLabel.Size = new System.Drawing.Size(154, 20);
+            this.timeZoneOutputLabel.Size = new System.Drawing.Size(207, 20);
             this.timeZoneOutputLabel.TabIndex = 2;
+            this.timeZoneOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // selectButton
             // 
-            this.selectButton.Location = new System.Drawing.Point(42, 224);
+            this.selectButton.Location = new System.Drawing.Point(29, 224);
             this.selectButton.Name = "selectButton";
             this.selectButton.Size = new System.Drawing.Size(96, 28);
             this.selectButton.TabIndex = 3;
             this.selectButton.Text = "S&elect";
             this.selectButton.UseVisualStyleBackColor = true;
+            this.selectButton.Click += new System.EventHandler(this.selectButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(272, 224);
+            this.exitButton.Location = new System.Drawing.Point(259, 224);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(96, 28);
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(158, 224);
+            this.clearButton.Location = new System.Drawing.Point(145, 224);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(96, 28);
             this.clearButton.TabIndex = 5;
             this.clearButton.Text = "&Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // cityListBox
             // 
@@ -103,7 +107,7 @@ namespace Time_Zone_Selector
             "Minneapolis",
             "New York",
             "San Francisco"});
-            this.cityListBox.Location = new System.Drawing.Point(136, 55);
+            this.cityListBox.Location = new System.Drawing.Point(131, 55);
             this.cityListBox.Name = "cityListBox";
             this.cityListBox.Size = new System.Drawing.Size(133, 94);
             this.cityListBox.TabIndex = 6;
@@ -113,14 +117,14 @@ namespace Time_Zone_Selector
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
-            this.ClientSize = new System.Drawing.Size(408, 277);
+            this.ClientSize = new System.Drawing.Size(385, 272);
             this.Controls.Add(this.cityListBox);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.selectButton);
+            this.Controls.Add(this.promptLabel);
             this.Controls.Add(this.timeZoneOutputLabel);
             this.Controls.Add(this.timeZoneDescriptionLabel);
-            this.Controls.Add(this.promptLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
